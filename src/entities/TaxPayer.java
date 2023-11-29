@@ -8,12 +8,10 @@ public class TaxPayer {
 	private double healthSpending;
 	private double educationSpending;
 	
-	//Construtores
 	public TaxPayer() {
 	}
 
-	public TaxPayer(double salaryIncome, double servicesIncome, double capitalIncome, double healthSpending,
-			double educationSpending) {
+	public TaxPayer(double salaryIncome, double servicesIncome, double capitalIncome, double healthSpending, double educationSpending) {
 		this.salaryIncome = salaryIncome;
 		this.servicesIncome = servicesIncome;
 		this.capitalIncome = capitalIncome;
@@ -21,7 +19,6 @@ public class TaxPayer {
 		this.educationSpending = educationSpending;
 	}
 
-	//Getters and Setters
 	public double getSalaryIncome() {
 		return salaryIncome;
 	}
@@ -42,7 +39,6 @@ public class TaxPayer {
 		return educationSpending;
 	}
 	
-	//Operations
 	public double salaryTax() {
 		if(getSalaryIncome() / 12 > 5000.00) {
 			return getSalaryIncome() / 100 * 20;
